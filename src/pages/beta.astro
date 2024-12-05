@@ -32,7 +32,9 @@ import Layout from "../layouts/Layout.astro";
                 <span>Sexy and smart</span>
               </div>
             </td>
-            <td></td>
+            <td>
+              <span class="availability">Test hello</span>
+            </td>
             <td></td>
           </tr>
           <tr>
@@ -576,7 +578,7 @@ import Layout from "../layouts/Layout.astro";
             <td>
               <div class="badge badge-text">
                 <span></span>
-              </br
+              </br>
             </td>
             <td></td>
             <td></td>
@@ -1771,6 +1773,41 @@ import Layout from "../layouts/Layout.astro";
 
     .popover .badge--magnificent {
       color: transparent;
+    }
+
+    .availability {
+      display: inline-block;
+      font-size: 0.8em;
+      padding: 0.1em 0.4em;
+      border-radius: 0.5rem;
+      line-height: 1.3;
+      font-weight: 400;
+      text-shadow: none;
+      background: #ffffff;
+      vertical-align: 0.05em;
+      position: relative;
+      border: 1px solid currentColor;
+      filter: blur(5px);
+    }
+
+    .availability--yes {
+      content: "available";
+      color: #13151a;
+
+    }
+
+    .availability--no {
+      content: "not avilable";
+      color: red;
+
+    }
+
+    .text--source {
+
+    }
+
+    .text--stats {
+
     }
   </style>
 </Layout>
